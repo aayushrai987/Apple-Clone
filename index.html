@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Apple Clone</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#ffffff" />
+</head>
+<body class="bg-white text-black font-['Inter',_sans-serif] antialiased">
+     <header id="site-header" class="bg-white/80 backdrop-blur-sm fixed top-0 w-full z-50">
+        <nav class="container mx-auto px-6">
+            <div class="flex items-center justify-between md:justify-center h-12">
+
+                <div class="md:hidden">
+                    <a href="https://www.apple.com/in/" class="text-black text-xl" aria-label="Apple"></a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8 text-xs text-gray-800">
+                    <a href="https://www.apple.com/in/" class="text-black text-xl -translate-y-px" aria-label="Apple"></a>
+                    <a href="https://www.apple.com/in/store" class="hover:text-black">Store</a>
+                    <a href="https://www.apple.com/in/mac/" class="hover:text-black">Mac</a>
+                    <a href="https://www.apple.com/in/ipad/" class="hover:text-black">iPad</a>
+                    <a href="https://www.apple.com/in/iphone/" class="hover:text-black">iPhone</a>
+                    <a href="https://www.apple.com/in/watch/" class="hover:text-black">Watch</a>
+                    <a href="https://www.apple.com/in/airpods/" class="hover:text-black">AirPods</a>
+                    <a href="https://www.apple.com/in/tv-home/" class="hover:text-black">TV & Home</a>
+                    <a href="https://www.apple.com/in/services/" class="hover:text-black">Entertainment</a>
+                    <a href="https://www.apple.com/in/shop/accessories/all" class="hover:text-black">Accessories</a>
+                    <a href="https://support.apple.com/en-in" class="hover:text-black">Support</a>
+                    <a href="https://www.apple.com/in/search" class="hover:text-black" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.apple.com/in/shop/bag" class="hover:text-black" aria-label="Shopping Bag">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                     <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" class="text-black focus:outline-none" title="Open menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200" role="menu" aria-label="Mobile menu"></div>
+        </nav>
+    </header>
+
+    <div class="pt-12">
+        <div class="bg-white-50 text-center py-2.5 text-xs sm:text-sm text-gray-800">
+            <p>Get up to 6 months of No Cost EMI plus up to ₹10000 instant cashback on selected products with eligible cards. <a href="https://www.apple.com/in/shop/ways-to-buy" class="text-blue-600 hover:underline">Shop ></a></p>
+        </div>
+        <main>
+
+        <section class="min-h-[70vh] flex flex-col justify-start items-center py-16 mb-2" style="background-image: url('https://www.apple.com/kr/home/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_largetall.jpg'); background-size: cover; background-position: center;">
+        <div class="max-w-4xl px-6 mx-auto text-center">
+            <h1 class="text-3xl sm:text-5xl md:text-5xl font-semibold text-black">iPhone</h1>
+            <p class="text-xl sm:text-2xl mt-3 text-black">Meet the iPhone 16 family.</p>
+            <div class="mt-5 flex items-center justify-center gap-4">
+                <a href="https://www.apple.com/in/iphone/" class="bg-blue-600 text-white py-1.5 px-4 rounded-full text-base hover:bg-blue-700 transition">Learn more</a>
+                <a href="https://www.apple.com/in/shop/buy-iphone" class="text-blue-600 py-1.5 px-4 text-base hover:underline">Shop iPhone</a>
+            </div>
+            <p class="mt-4 text-lg text-red-500 font-semibold">Built for Apple Intelligence.</p>
+        </div>
+    </section>
+
+    <section class="min-h-screen flex flex-col justify-between bg-cover bg-center bg-no-repeat" 
+         style="background-image: url('./Photoroom_20250824_184746.png');">
+    <div class="text-center pt-32">
+        <h1 class="text-4xl md:text-5xl font-bold text-black">MacBook Air</h1>
+        <p class="text-xl md:text-2xl mt-2 text-black">Sky blue colour.</p>
+        <p class="text-xl md:text-2xl mt-2 text-black">Sky high performance with M4.</p>
+        <div class="mt-6">
+            <a href="https://www.apple.com/macbook-air/" 
+               class="bg-blue-600 text-white py-1.5 px-4 rounded-full text-base hover:bg-blue-700 transition">Learn more</a>
+            <a href="https://www.apple.com/shop/buy-mac/macbook-air" 
+               class="text-blue-600 py-1.5 px-4 rounded-full text-base hover:underline">Buy</a>
+        </div>
+    </div>
+    <div class="text-center pb-8">
+        <p class="text-lg text-red-500 font-semibold">Built for Apple Intelligence.</p>
+    </div>
+
+</section>
+
+
+            <section class="py-3 bg-white">
+                <div class="container mx-auto px-3">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+                        <article class="rounded-lg overflow-hidden relative min-h-[500px] bg-gray-100 bg-cover bg-center" style="background-image: url('https://istorm.com.cy/cdn/shop/files/Apple_Watch_Series_10_GPS_46mm_Jet_Black_Hero_Horizontal_Screen__USEN_1_1070x_18ac8ed8-60ee-4f09-8c94-ebf5144d07ee_1500x.webp?v=1736776370');">
+                            <div class="p-8 h-full flex flex-col justify-start items-center text-center">
+                                <h3 class="text-4xl font-bold text-black"> WATCH</h3>
+                                <p class="text-black uppercase text-sm font-semibold mt-2 leading-snug">Series 10</p>
+                                <p class="text-xl mt-2 text-black">Thinstant classic.</p>
+                                <div class="mt-4">
+                                     <a href="https://www.apple.com/in/apple-watch-series-10/" class="bg-blue-600 text-white py-1.5 px-4 rounded-full text-base hover:bg-blue-700 transition">Learn more</a>
+                                     <a href="https://www.apple.com/in/shop/buy-watch/apple-watch" class="text-blue-600 py-1.5 px-4 text-base hover:underline">Buy</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="rounded-lg overflow-hidden relative min-h-[500px] bg-gray-100 bg-cover bg-center" style="background-image: url('https://www.apple.com/euro/home/aa/screens_alt/images/heroes/ipad-air/hero_ipad_air__enn6321t3tkm_mediumtall.jpg');">
+                             <div class="p-8 h-full flex flex-col justify-start items-center text-center">
+                                <h3 class="text-4xl font-bold text-black">iPad air</h3>
+                                <p class="text-xl mt-2 text-black">Now supercharged by the M3 chip.</p>
+                                <div class="mt-4">
+                                     <a href="https://www.apple.com/in/ipad-air/" class="bg-blue-600 text-white py-1.5 px-4 rounded-full text-base hover:bg-blue-700 transition">Learn more</a>
+                                    <a href="https://www.apple.com/in/shop/buy-ipad/ipad-air" class="text-blue-600 py-1.5 px-4 text-base hover:underline">Buy</a>
+                                </div>
+                            </div>
+                        </article>
+
+                            <article class="rounded-lg overflow-hidden relative min-h-[500px] bg-gray-100 bg-cover bg-center" style="background-image: url('https://www.01net.com/app/uploads/2024/11/macbook-pro-m4-quantum-dot-1360x907.jpg');">
+                            <div class="p-8 h-full flex flex-col justify-start items-center text-center">
+                                <h3 class="text-4xl font-bold text-white">MacBook Pro</h3>
+                                <p class="text-xl mt-2 text-white">A work of smart.</p>
+                                <div class="mt-4">
+                                     <a href="https://www.apple.com/in/macbook-pro/" class="bg-blue-600 text-white py-1.5 px-4 rounded-full text-base hover:bg-blue-700 transition">Learn more</a>
+                                      <a href="https://www.apple.com/in/shop/buy-mac/macbook-pro" class="text-blue-600 py-1.5 px-4 text-base hover:underline">Buy</a>
+                                </div>
+                                <div class="p-8 h-full flex flex-col justify-end items-center text-center">
+                                <p class="mt-4 text-lg text-red-500 font-semibold">Built for Apple Intelligence.</p>
+                                </div>
+                        </article>
+
+                          <article class="rounded-lg overflow-hidden relative min-h-[500px] bg-gray-100 bg-cover bg-center" style="background-image: url('https://www.apple.com/v/ipad-pro/at/images/overview/hero/hero_endframe__sg50vzdd6sqm_large.jpg');">
+                            <div class="p-8 h-full flex flex-col justify-start items-center text-center">
+                                <h3 class="text-4xl font-bold text-white">iPad Pro</h3>
+                                <p class="text-xl mt-2 text-white">Unbelievably thin, incredibly powerful.</p>
+                                <div class="mt-4">
+                                     <a href="https://www.apple.com/in/ipad-pro/" class="bg-blue-600 text-white py-1.5 px-4 rounded-full text-base hover:bg-blue-700 transition">Learn more</a>
+                                      <a href="https://www.apple.com/in/shop/buy-ipad/ipad-pro" class="text-blue-600 py-1.5 px-4 text-base hover:underline">Buy</a>
+                                </div>
+                                <div class="p-8 h-full flex flex-col justify-end items-center text-center">
+                                <p class="mt-4 text-lg text-red-500 font-semibold">Built for Apple Intelligence.</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="rounded-lg overflow-hidden relative min-h-[500px] bg-gray-100 bg-cover bg-center" style="background-image: url('https://cdn.myshoptet.com/usr/www.syphone.cz/user/documents/upload/Foto/Telefony/AirPods%204/AirPods%204%20-%20Controls_2.png');">
+                            <div class="p-8 h-full flex flex-col justify-end items-center text-center">
+                                <h3 class="text-4xl font-bold text-white">Airpods 4</h3>
+                                <p class="text-xl mt-2 text-white">Iconic. Now supericonic.</p>
+                                <p class="text-xl mt-2 text-white">Available with Active Noise Cancellation.</p>
+                                <div class="mt-4">
+                                     <a href="https://www.apple.com/in/airpods-4/" class="bg-blue-600 text-white py-1.5 px-4 rounded-full text-base hover:bg-blue-700 transition">Learn more</a>
+                                     <a href="https://www.apple.com/in/shop/buy-airpods/airpods-4" class="text-blue-600 py-1.5 px-4 text-base hover:underline">Buy</a>
+                                </div>
+                            </div>
+                        
+                        </article>
+                         <article class="rounded-lg overflow-hidden relative min-h-[500px] bg-gray-100 bg-cover bg-center" style="background-image: url('https://icon.co.cr/cdn/shop/files/Trade_in_Banner.jpg?v=1729177677&width=3840');">
+                             <div class="p-8 h-full flex flex-col justify-start items-center text-center">
+                                 <h3 class="text-4xl font-bold text-black">Trade In</h3>
+                                <p class="text-black text-0.5xl mt-2 leading-snug">Upgrade and save. It's that easy.</p>
+                                <div class="mt-4">
+                                     <a href="https://www.apple.com/in/shop/trade-in" class="bg-blue-600 text-white py-1.5 px-3 rounded-full text-base hover:bg-blue-700 transition">Get your estimate</a>
+                                </div>
+                            </div>
+                        </article>
+
+                       
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="apple-footer py-10">
+        <div class="container mx-auto px-6">
+            <div class="footer-disclaimers border-b border-[#d2d2d7] pb-6 mb-6">
+               <p>
+                    ◊No Cost EMI is available with the purchase of an <a href="https://www.apple.com/in/shop/ways-to-buy" class="text-black underline" class="underline">eligible product</a> made using qualifying cards on 3- or 6-month tenures from most leading card issuers. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer’s terms and conditions. Minimum order spend applies as per your card issuer’s threshold. No Cost EMI is not available to business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice. <a href="https://www.apple.com/in/shop/browse/financing/terms" class="text-black underline">Terms apply</a>.
+                </p>
+                <p class="mt-4">
+                   ‡Instant cashback is available with the purchase of an <a href="https://www.apple.com/in/shop/ways-to-buy" class="text-black underline">eligible product</a> with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001.00 applies. <a href="https://www.apple.com/in/shop/ways-to-buy" class="text-black underline">Click here</a> to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. <a href="https://www.apple.com/in/shop/browse/financing/terms" class="text-black underline">Additional terms apply</a>. Instant cashback is not available to business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback.
+                </p>
+                <p class="mt-4">
+                    *Apple Education Pricing is available to current and newly accepted college students and their parents, as well as teachers and staff at all levels. For more information, visit <a href="https://www.apple.com/in-edu/store" class="text-black underline">apple.com/in-edu/store</a>.
+                </p>
+                <p class="mt-4">
+                    1. Qualified Purchasers can receive Promotion Savings when they purchase an eligible Mac or iPad with their choice of a Promotion Product at a Qualifying Location. Customers will be charged for all items in their cart, including the Promotion Product. Only one Promotion Product can be obtained per eligible Mac or iPad per Qualified Purchaser. The offer is subject to availability, while supplies last. View full terms and conditions of offer <a href="https://www.apple.com/in-edu/shop/back-to-school/terms-conditions" class="text-black underline">here</a>.
+                </p>
+                <p class="mt-4">2. Available in two models: AirPods 4 and AirPods 4 with Active Noise Cancellation.</p>
+                <p class="mt-4">
+                    Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with M1 and later, with Siri and device language set to the same supported language, as part of an iOS 18, iPadOS 18 and macOS Sequoia software update. Supported languages include English, French, German, Italian, Portuguese (Brazil), Spanish, Japanese, Korean and Chinese (Simplified). More languages are coming over the course of the year, including Vietnamese. Some features may not be available in all regions or languages.
+                </p>
+                <p class="mt-4">A subscription is required for Apple TV+.</p>
+                <p class="mt-4">Features are subject to change. Some features, applications and services may not be available in all regions or all languages.</p>
+            </div>
+
+            <div class="footer-links grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div>
+                    <h4 class="text-[#1d1d1f] font-semibold mb-2">Shop and Learn</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/store">Store</a></li>
+                        <li><a href="https://www.apple.com/in/mac/">Mac</a></li>
+                        <li><a href="https://www.apple.com/in/ipad/">iPad</a></li>
+                        <li><a href="https://www.apple.com/in/iphone/">iPhone</a></li>
+                        <li><a href="https://www.apple.com/in/watch/">Watch</a></li>
+                        <li><a href="https://www.apple.com/in/airpods/">AirPods</a></li>
+                        <li><a href="https://www.apple.com/in/tv-home/">TV & Home</a></li>
+                        <li><a href="https://www.apple.com/in/airtag/">AirTag</a></li>
+                        <li><a href="https://www.apple.com/in/shop/accessories/all">Accessories</a></li>
+                        <li><a href="https://www.apple.com/in/shop/gift-cards">Gift Cards</a></li>
+                    </ul>
+                    <h4 class="text-[#1d1d1f] font-semibold mt-4 mb-2">Apple Wallet</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/wallet/">Wallet</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[#1d1d1f] font-semibold mb-2">Account</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://appleid.apple.com/in/">Manage Your Apple ID</a></li>
+                        <li><a href="https://secure.store.apple.com/in/shop/account/home">Apple Store Account</a></li>
+                        <li><a href="https://www.icloud.com/">iCloud.com</a></li>
+                    </ul>
+                    <h4 class="text-[#1d1d1f] font-semibold mt-4 mb-2">Entertainment</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/apple-one/">Apple One</a></li>
+                        <li><a href="https://www.apple.com/in/apple-tv-plus/">Apple TV+</a></li>
+                        <li><a href="https://www.apple.com/in/apple-music/">Apple Music</a></li>
+                        <li><a href="https://www.apple.com/in/apple-arcade/">Apple Arcade</a></li>
+                        <li><a href="https://www.apple.com/in/apple-podcasts/">Apple Podcasts</a></li>
+                        <li><a href="https://www.apple.com/in/apple-books/">Apple Books</a></li>
+                        <li><a href="https://www.apple.com/in/app-store/">App Store</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[#1d1d1f] font-semibold mb-2">Apple Store</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/retail/">Find a Store</a></li>
+                        <li><a href="https://www.apple.com/in/retail/geniusbar/">Genius Bar</a></li>
+                        <li><a href="https://www.apple.com/in/today/">Today at Apple</a></li>
+                        <li><a href="https://www.apple.com/in/today/groups/">Group Reservations</a></li>
+                        <li><a href="https://www.apple.com/in/today/camp/">Apple Camp</a></li>
+                        <li><a href="https://www.apple.com/in/shop/trade-in">Apple TradeIn</a></li>
+                        <li><a href="https://www.apple.com/in/shop/ways-to-buy">Ways to Buy</a></li>
+                        <li><a href="https://www.apple.com/in/recycling/">Recycling Programme</a></li>
+                        <li><a href="https://secure.store.apple.com/in/shop/order/list">Order Status</a></li>
+                        <li><a href="https://www.apple.com/in/shop/help">Shopping Help</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[#1d1d1f] font-semibold mb-2">For Business</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/business/">Apple and Business</a></li>
+                        <li><a href="https://www.apple.com/in/retail/business/">Shop for Business</a></li>
+                    </ul>
+                    <h4 class="text-[#1d1d1f] font-semibold mt-4 mb-2">For Education</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/education/">Apple and Education</a></li>
+                        <li><a href="https://www.apple.com/in-edu/store/">Shop for Education</a></li>
+                        <li><a href="https://www.apple.com/in-edu/store">Shop for University</a></li>
+                    </ul>
+                     <h4 class="text-[#1d1d1f] font-semibold mt-4 mb-2">For Healthcare</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/healthcare/">Apple and Healthcare</a></li>
+                    </ul>
+                     <h4 class="text-[#1d1d1f] font-semibold mt-4 mb-2">For Government</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/government/">Apple and Government</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[#1d1d1f] font-semibold mb-2">Apple Values</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/accessibility/">Accessibilty</a></li>
+                        <li><a href="https://www.apple.com/in/education-initiative/">Education</a></li>
+                        <li><a href="https://www.apple.com/in/environment/">Environment</a></li>
+                        <li><a href="https://www.apple.com/in/privacy/">Privacy</a></li>
+                        <li><a href="https://www.apple.com/in/supply-chain/">Supply Chain Innovation</a></li>
+                    </ul>
+                     <h4 class="text-[#1d1d1f] font-semibold mt-4 mb-2">About Apple</h4>
+                    <ul class="space-y-1.5">
+                        <li><a href="https://www.apple.com/in/newsroom/">Newsroom</a></li>
+                        <li><a href="https://www.apple.com/in/leadership/">Apple Leardership</a></li>
+                        <li><a href="https://www.apple.com/careers/in/">Career Oppurtunities</a></li>
+                        <li><a href="https://investor.apple.com/investor-relations/default.aspx">Investors</a></li>
+                        <li><a href="https://www.apple.com/compliance/">Ethics & Compliance</a></li>
+                        <li><a href="https://www.apple.com/in/apple-events/">Events</a></li>
+                        <li><a href="https://www.apple.com/in/contact/">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-[11px] border-b border-[#d2d2d7] pt-8 pb-4">
+                <p>More ways to shop: <a href="https://www.apple.com/in/retail/" class="text-blue-600 underline">Find an Apple Store</a> or <a href="https://locate.apple.com/in/en/" class="text-blue-600 underline">other retailer</a> near you. Or call <a href="tel:0008000401966" class="text-blue-600 underline">0008000401966</a>.</p>
+            </div>
+            <div class="text-[11px] pt-4 flex flex-col sm:flex-row justify-between items-center">
+                <div class="flex flex-wrap items-center gap-x-3 text-gray-500">
+                    <p>Copyright © 2025 Apple Inc. All rights reserved.</p>
+                    <div class="flex flex-wrap items-center gap-x-2">
+                        <a href="https://www.apple.com/in/legal/privacy/" class="hover:underline">Privacy Policy</a><span>|</span>
+                        <a href="https://www.apple.com/in/legal/internet-services/terms/site.html" class="hover:underline">Terms of Use</a><span>|</span>
+                        <a href="https://www.apple.com/in/legal/sales-support/sales-policies/retail_in.html" class="hover:underline">Sales Policy</a><span>|</span>
+                        <a href="https://www.apple.com/in/legal/" class="hover:underline">Legal</a><span>|</span>
+                        <a href="https://www.apple.com/in/sitemap/" class="hover:underline">Site Map</a>
+                    </div>
+                </div>
+                <a href="https://www.apple.com/choose-country-region/" class="hover:underline mt-2 sm:mt-0">India</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
